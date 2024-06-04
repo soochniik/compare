@@ -1,0 +1,37 @@
+.input {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #66bc54;
+    border-radius: 7px;
+    height: 42px;
+  }
+  
+  .input .active-wrapper {
+    align-items: center;
+    display: inline-flex;
+    padding: 1px 14px;
+    position: relative;
+    top: 9px;
+  }
+  
+  .input .div {
+    color: #66bc54;
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 21.7px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .input.active {
+    width: 445px;
+  }
+  
+  .input.active-2 {
+    width: 300px;
+  }
+  

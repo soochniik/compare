@@ -1,0 +1,156 @@
+.start-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .start-page .div-2 {
+    background-color: #ffffff;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .start-page .overlap-group {
+    height: 428px;
+    left: 462px;
+    position: absolute;
+    top: 255px;
+    width: 685px;
+  }
+  
+  .start-page .ellipse {
+    background-color: #66bc5459;
+    border-radius: 214px;
+    height: 428px;
+    left: 257px;
+    position: absolute;
+    top: 0;
+    width: 428px;
+  }
+  
+  .start-page .text-wrapper-3 {
+    color: #002777;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 38px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 57px;
+  }
+  
+  .start-page .instuction {
+    height: 154px;
+    left: 0;
+    position: absolute;
+    top: 137px;
+    width: 581px;
+  }
+  
+  .start-page .p {
+    color: transparent;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .start-page .span {
+    color: #000000;
+  }
+  
+  .start-page .text-wrapper-4 {
+    color: #243a99;
+  }
+  
+  .start-page .text-wrapper-5 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 64px;
+  }
+  
+  .start-page .text-wrapper-6 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 102px;
+  }
+  
+  .start-page .buttons-normal-comprasion {
+    left: 195px !important;
+    position: absolute !important;
+    top: 391px !important;
+  }
+  
+  .start-page .input-active-comprasion {
+    left: 35px !important;
+    position: absolute !important;
+    top: 326px !important;
+  }
+  
+  .start-page .logo {
+    height: 69px;
+    left: 57px;
+    object-fit: cover;
+    position: absolute;
+    top: 53px;
+    width: 164px;
+  }
+  
+  .start-page .text-wrapper-7 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    left: 259px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 73px;
+  }
+  
+  .start-page .text-wrapper-8 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    left: 51px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 976px;
+  }
+  
+  .start-page .buttons-normal-lk {
+    left: 1200px !important;
+    position: absolute !important;
+    top: 69px !important;
+  }
+  
+  .start-page .buttons-menu-normal-history {
+    left: 420px !important;
+    position: absolute !important;
+    top: 74px !important;
+  }
+  

@@ -1,0 +1,212 @@
+﻿.history {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.history .div-2 {
+    background-color: #ffffff;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+}
+
+.history .overlap-group {
+    height: 481px;
+    left: 42px;
+    position: absolute;
+    top: 202px;
+    width: 1342px;
+}
+
+.history .ellipse {
+    background-color: #66bc5459;
+    border-radius: 214px;
+    height: 428px;
+    left: 677px;
+    position: absolute;
+    top: 53px;
+    width: 428px;
+}
+
+.history .product {
+    height: 98px;
+    left: 0;
+    position: absolute;
+    top: 201px;
+    width: 1340px;
+}
+
+.history .image {
+    height: 71px;
+    left: 16px;
+    object-fit: cover;
+    position: absolute;
+    top: 1px;
+    width: 71px;
+}
+
+.history .monge-vetsolution {
+     color: #000000;
+     font-family: "Jost-Medium", Helvetica;
+     font-size: 18px;
+     font-weight: 500;
+     left: 121px;
+     letter-spacing: 0;
+     line-height: normal;
+     position: absolute;
+     top: 0;
+}
+
+.history .text-wrapper-2 {
+     color: #000000;
+     font-family: "Jost-Medium", Helvetica;
+     font-size: 20px;
+     font-weight: 500;
+     left: 1091px;
+     letter-spacing: 0;
+     line-height: normal;
+     position: absolute;
+     top: 20px;
+}
+
+.history .line {
+     height: 1px;
+     left: 0;
+     object-fit: cover;
+     position: absolute;
+     top: 96px;
+     width: 1336px;
+}
+
+.history .header {
+     background-color: transparent;
+     height: 182px;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 1342px;
+}
+
+history -text-wrapper-3 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 38px;
+    font-weight: 500;
+    left: 536px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+}
+
+.history .text-wrapper-4 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 30px;
+    font-weight: 500;
+    left: 61px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 118px;
+}
+
+.history .text-wrapper-5 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 30px;
+    font-weight: 500;
+    left: 1046px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 118px;
+}
+
+.history .img {
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 180px;
+    width: 1336px;
+}
+
+.history .product-2 {
+    height: 97px;
+    left: 0;
+    position: absolute;
+    top: 322px;
+    width: 1340px;
+}
+
+.history .text-wrapper-6 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 121px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 23px;
+}
+
+.history .image-2 {
+    height: 71px;
+    left: 16px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 71px;
+}
+
+.history .logo {
+    height: 69px;
+    left: 57px;
+    object-fit: cover;
+    position: absolute;
+    top: 53px;
+    width: 164px;
+}
+
+.history .text-wrapper-7 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    left: 260px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 73px;
+}
+
+.history .buttons-menu-normal-history {
+    left: 420px !important;
+    position: absolute !important;
+    top: 74px !important;
+}
+
+.history .buttons-normal-back {
+    left: 1291px !important;
+    position: absolute !important;
+    top: 69px !important;
+}
+
+.history .p {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    left: 51px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 976px;
+}

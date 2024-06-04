@@ -1,0 +1,229 @@
+.comparison {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .comparison .div-2 {
+    background-color: #ffffff;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .comparison .overlap-group {
+    height: 466px;
+    left: 719px;
+    position: absolute;
+    top: 217px;
+    width: 428px;
+  }
+  
+  .comparison .ellipse {
+    background-color: #66bc5459;
+    border-radius: 214px;
+    height: 428px;
+    left: 0;
+    position: absolute;
+    top: 38px;
+    width: 428px;
+  }
+  
+  .comparison .element {
+    height: 95px;
+    left: 52px;
+    position: absolute;
+    top: 63px;
+    width: 160px;
+  }
+  
+  .comparison .text-wrapper-2 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .comparison .text-wrapper-3 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 37px;
+  }
+  
+  .comparison .text-wrapper-4 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 66px;
+  }
+  
+  .comparison .element-2 {
+    height: 95px;
+    left: 52px;
+    position: absolute;
+    top: 213px;
+    width: 160px;
+  }
+  
+  .comparison .element-3 {
+    height: 95px;
+    left: 52px;
+    position: absolute;
+    top: 363px;
+    width: 160px;
+  }
+  
+  .comparison .text-wrapper-5 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 30px;
+    font-weight: 500;
+    left: 52px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .comparison .logo {
+    height: 69px;
+    left: 57px;
+    object-fit: cover;
+    position: absolute;
+    top: 53px;
+    width: 164px;
+  }
+  
+  .comparison .text-wrapper-6 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    left: 260px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 73px;
+  }
+  
+  .comparison .buttons-menu-normal-history {
+    left: 420px !important;
+    position: absolute !important;
+    top: 74px !important;
+  }
+  
+  .comparison .p {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    left: 51px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 976px;
+  }
+  
+  .comparison .buttons-normal-back {
+    left: 1291px !important;
+    position: absolute !important;
+    top: 69px !important;
+  }
+  
+  .comparison .text-wrapper-7 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 30px;
+    font-weight: 500;
+    left: 117px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 217px;
+  }
+  
+  .comparison .text-wrapper-8 {
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    left: 117px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 497px;
+  }
+  
+  .comparison .text-wrapper-9 {
+    color: #000000;
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 116px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 676px;
+  }
+  
+  .comparison .text-wrapper-10 {
+    color: #000000;
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 116px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 706px;
+  }
+  
+  .comparison .element-4 {
+    height: 95px;
+    left: 771px;
+    position: absolute;
+    top: 730px;
+    width: 160px;
+  }
+  
+  .comparison .text-wrapper-11 {
+    color: #000000;
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 117px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 624px;
+  }
+
+  .comparison .image {
+    height: 177px;
+    left: 116px;
+    object-fit: cover;
+    position: absolute;
+    top: 301px;
+    width: 177px;
+  }
+  

@@ -1,0 +1,27 @@
+.buttons-menu-normal {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .buttons-menu-normal .div-wrapper {
+    align-items: center;
+    border-radius: 7px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    position: relative;
+  }
+  
+  .buttons-menu-normal .text-wrapper-2 {
+    color: #000000;
+    font-family: "Jost", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
