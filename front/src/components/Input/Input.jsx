@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const Input = ({ input, className, text = "Active2" }) => {
+export const Input = ({ input, className, text }) => {
   return (
     <div className={`input ${input} ${className}`}>
       <div className="active-wrapper">
         <div className="div">
-          {input === "active" && <>Active</>}
+          {input === "active" && <>{text}</>}
 
           {input === "active-2" && <>{text}</>}
         </div>

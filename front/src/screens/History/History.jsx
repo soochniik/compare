@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import { Buttons } from "../../components/Buttons";
-import { ButtonsMenuNormal } from "../../components/ButtonsMenuNormal";
+import { ButtonsMenu } from "../../components/ButtonsMenu";
 import "./style.css";
 
 export const History = () => {
@@ -36,8 +36,8 @@ export const History = () => {
                     <a className="text-wrapper-7" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
                         Основной сайт
                     </a>
-                    <ButtonsMenuNormal className="buttons-menu-normal-history" />
-                    <Buttons button="normal" className="buttons-normal-back" text=" Назад" />
+                    <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+                    <Buttons button="normal" className="buttons-normal-back" text="Назад" />
                     <p className="p">Все права защищены АО "Валта Пет Продактс", 2014 - 2024</p>
                 </div>
            </div>

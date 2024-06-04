@@ -1,1 +1,0 @@
-export { ButtonsMenuNormal } from "./ButtonsMenuNormal";

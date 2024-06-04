@@ -1,6 +1,6 @@
 import React from "react";
 import { Buttons } from "../../components/Buttons";
-import { ButtonsMenuNormal } from "../../components/ButtonsMenuNormal";
+import { ButtonsMenu } from "../../components/ButtonsMenu";
 import "./style.css";
 
 export const Comparison = () => {
@@ -30,7 +30,7 @@ export const Comparison = () => {
         <a className="text-wrapper-6" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
           Основной сайт
         </a>
-        <ButtonsMenuNormal className="buttons-menu-normal-history" />
+        <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons button="normal" className="buttons-normal-back" text="Назад" />
         <div className="text-wrapper-7">Валта</div>

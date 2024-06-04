@@ -1,6 +1,6 @@
 import React from "react";
 import { Buttons } from "../../components/Buttons";
-import { ButtonsMenuNormal } from "../../components/ButtonsMenuNormal";
+import { ButtonsMenu } from "../../components/ButtonsMenu";
 import { Input } from "../../components/Input";
 import "./style.css";
 
@@ -21,7 +21,7 @@ export const LogIn = () => {
         <a className="text-wrapper-4" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
           Основной сайт
         </a>
-        <ButtonsMenuNormal className="buttons-menu-normal-history" />
+        <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
       </div>
     </div>
   );

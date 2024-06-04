@@ -8,20 +8,20 @@ import { History } from "./screens/History";
 const ProjectRoutes = () => {
     let element = useRoutes([ 
         { 
-            path: "startpage",
-            element: < StartPage />,
+            path: "/",
+            element: <StartPage />,
         },
         { 
             path: "login",
-            element: < LogIn />,
+            element: <LogIn />,
         },
         { 
             path: "comparison",
-            element: < Comparison />,
+            element: <Comparison />,
         },
         { 
             path: "history",
-            element: < History />,
+            element: <History />,
         },
     ]);
 

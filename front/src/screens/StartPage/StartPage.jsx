@@ -1,6 +1,6 @@
 import React from "react";
 import { Buttons } from "../../components/Buttons";
-import { ButtonsMenuNormal } from "../../components/ButtonsMenuNormal";
+import { ButtonsMenu } from "../../components/ButtonsMenu";
 import { Input } from "../../components/Input";
 import "./style.css";
 
@@ -29,7 +29,7 @@ export const StartPage = () => {
               &nbsp;&nbsp;&nbsp;&nbsp; с аналогами по цене и актуальные акции и предложения.
             </p>
           </div>
-          <Buttons button="normal" className="buttons-normal-comprasion" text="Личный кабинет" />
+          <Buttons button="normal" className="buttons-normal-comprasion" text="Сравнить" />
           <Input className="input-active-comprasion" />
         </div>
         <img className="logo" alt="Logo" src="logo.png" />
@@ -38,7 +38,7 @@ export const StartPage = () => {
         </a>
         <p className="text-wrapper-8">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons button="normal" className="buttons-normal-lk" text="Личный кабинет" />
-        <ButtonsMenuNormal className="buttons-menu-normal-history" />
+        <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
       </div>
     </div>
   );
