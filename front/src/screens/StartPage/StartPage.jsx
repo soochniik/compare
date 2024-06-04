@@ -3,6 +3,7 @@ import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
 import { Input } from "../../components/Input";
 import "./style.css";
+import logo from "../../assets/logo.png";
 
 export const StartPage = () => {
   return (
@@ -14,25 +15,30 @@ export const StartPage = () => {
           <div className="instuction">
             <p className="p">
               <span className="span">
-                Для сравнения продуктов с аналогами введите в поле ниже <br />
-                &nbsp;&nbsp;&nbsp;&nbsp; артикул товара с нашего{" "}
+                1. Для сравнения продуктов с аналогами введите в поле ниже <br/>
+                артикул товара с нашего{" "}
               </span>
               <a href="https://valta.ru/catalog/" rel="noopener noreferrer" target="_blank">
                 <span className="text-wrapper-4">сайта</span>
               </a>
               <span className="span">. Он расположен в карточке товара.</span>
             </p>
-            <p className="text-wrapper-5">После ввода артикула нажмите на кнопку “Сравнить”.</p>
+            <p className="text-wrapper-5">2. После ввода артикула нажмите на кнопку “Сравнить”.</p>
             <p className="text-wrapper-6">
-              После нажатия вы увидите результаты сравнения наших товаров
+              3. После нажатия вы увидите результаты сравнения наших товаров
               <br />
-              &nbsp;&nbsp;&nbsp;&nbsp; с аналогами по цене и актуальные акции и предложения.
+              с аналогами по цене и актуальные акции и предложения.
             </p>
           </div>
-          <Buttons button="normal" className="buttons-normal-comprasion" text="Сравнить" />
-          <Input className="input-active-comprasion" />
+          <Buttons button="normal" className="buttons-normal-comparison" text="Сравнить" />
+          <Input className="input-active-comparison" input="active" text="" />
         </div>
-        <img className="logo" alt="Logo" src="logo.png" />
+        <div className="main-logo">
+          <img
+              src={logo}
+              alt="valta"
+          />
+        </div>
         <a className="text-wrapper-7" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
           Основной сайт
         </a>

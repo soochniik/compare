@@ -1,18 +1,22 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 export const Input = ({ input, className, text }) => {
-  return (
-    <div className={`input ${input} ${className}`}>
-      <div className="active-wrapper">
-        <div className="div">
-          {input === "active" && <>{text}</>}
+  const [inputText, setInputText] = useState("");
 
-          {input === "active-2" && <>{text}</>}
-        </div>
-      </div>
-    </div>
+  const handleInputChange = (event) => {
+    setInputText(event.target.value);
+  };
+
+  return (
+    <input
+      type="text"
+      value={inputText}
+      onChange={handleInputChange}
+      placeholder={text}
+      className={`input ${input} ${className}`}
+    />
   );
 };
 

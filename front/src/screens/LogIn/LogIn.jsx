@@ -11,8 +11,8 @@ export const LogIn = () => {
         <div className="overlap-group">
           <div className="ellipse" />
           <Buttons button="normal" className="buttons-normal-login" text="Войти" />
-          <Input className="input-email" input="active-2" text="E-mail или телефон" />
-          <Input className="input-active" input="active-2" text="Пароль" />
+          <Input className="input-active-2-email" input="active-2" text="E-mail или телефон" />
+          <Input className="input-active-2-password" input="active-2" text="Пароль" />
           <div className="text-wrapper-3">Личный кабинет</div>
         </div>
         <img className="logo" alt="Logo" src="logo.png" />
