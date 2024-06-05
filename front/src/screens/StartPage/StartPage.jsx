@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
 import { Input } from "../../components/Input";
@@ -6,6 +7,20 @@ import "./style.css";
 import logo from "../../assets/logo.png";
 
 export const StartPage = () => {
+  const navigate = useNavigate();
+
+  const onLoginClick = () => {
+    navigate("/login");
+  };
+
+  const onCompareClick = () => {
+    navigate("/comparison");
+  };
+
+  const onHistoryClick = () => {
+    navigate("/history");
+  };
+  
   return (
     <div className="start-page">
       <div className="div-2">
@@ -30,7 +45,7 @@ export const StartPage = () => {
               с аналогами по цене и актуальные акции и предложения.
             </p>
           </div>
-          <Buttons button="normal" className="buttons-normal-comparison" text="Сравнить" />
+          <Buttons onClick={onCompareClick} button="normal" className="buttons-normal-comparison" text="Сравнить" />
           <Input className="input-active-comparison" input="active" text="" />
         </div>
         <div className="main-logo">
@@ -43,8 +58,8 @@ export const StartPage = () => {
           Основной сайт
         </a>
         <p className="text-wrapper-8">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
-        <Buttons button="normal" className="buttons-normal-lk" text="Личный кабинет" />
-        <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        <Buttons onClick={onLoginClick} button="normal" className="buttons-normal-lk" text="Личный кабинет" />
+        <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
       </div>
     </div>
   );

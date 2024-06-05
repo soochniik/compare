@@ -12,15 +12,15 @@ const ProjectRoutes = () => {
             element: <StartPage />,
         },
         { 
-            path: "login",
+            path: "/login",
             element: <LogIn />,
         },
         { 
-            path: "comparison",
+            path: "/comparison",
             element: <Comparison />,
         },
         { 
-            path: "history",
+            path: "/history",
             element: <History />,
         },
     ]);

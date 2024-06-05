@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 import React from "react";
 import "./style.css";
 
-export const Buttons = ({ button, className, text = "Normal" }) => {
+export const Buttons = ({ button, className, text = "Normal", onClick}) => {
   return (
-    <div className={`buttons ${className}`}>
-      <div className="normal">
+    <div className={`buttons ${className}`} onClick={onClick}>
+      <div className={`${button}`}>
         <div className="text-wrapper">{text}</div>
       </div>
     </div>

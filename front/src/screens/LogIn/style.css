@@ -60,15 +60,14 @@
     position: absolute;
     top: 116px;
   }
-  
-  .log-in .logo {
-    height: 69px;
+
+.log-in .main-logo {
+    height: 69px !important;
     left: 57px;
-    object-fit: cover;
     position: absolute;
     top: 53px;
-    width: 164px;
-  }
+    width: 164px !important;
+}
   
   .log-in .p {
     color: #000000;
@@ -88,18 +87,18 @@
     position: absolute !important;
     top: 69px !important;
   }
-  
+
   .log-in .text-wrapper-4 {
-    color: #000000;
-    font-family: "Jost-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    height: 26px;
-    left: 259px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 73px;
+      color: #000000;
+      font-family: "Jost", Helvetica;
+      font-size: 18px;
+      font-weight: 500;
+      height: 26px;
+      left: 259px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 73px;
   }
   
   .log-in .buttons-menu-normal-history {

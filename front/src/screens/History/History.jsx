@@ -2,6 +2,9 @@
 import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
 import "./style.css";
+import logo from "../../assets/logo.png";
+import korm2 from "../../assets/korm2.png";
+import line from "../../assets/Line1.png";
 
 export const History = () => {
     return(
@@ -10,29 +13,53 @@ export const History = () => {
                     <div className="overlap-group">
                         <div className="ellipse" />
                         <div className="product">
-                            <img className="image" alt="Image" src="image.png" />
+                            <div className="korm2">
+                                <img
+                                    src={korm2}
+                                    alt="korm2"
+                                />
+                            </div>
                             <p className="monge-vetsolution">
                                 Ветеринарная диета Monge VetSolution <br />
                                 Dog Diabetic Диабетик для собак при <br />
                                 сахарном диабете 12 кг
                             </p>
                             <div className="text-wrapper-2">31.05.2024</div>
-                            <img className="line" alt="Line" src="line-1.svg" />
+                            <div className="line">
+                                <img
+                                    src={line}
+                                    alt="line"
+                                />
+                            </div>
                         </div>
                         <header className="header">
                             <div className="text-wrapper-3">История сравнений</div>
                             <div className="text-wrapper-4">Название товара</div>
                             <div className="text-wrapper-5">Дата сравнения</div>
-                            <img className="img" alt="Line" src="line-3.svg" />
                         </header>
                         <div className="product-2">
                             <div className="text-wrapper-2">31.05.2024</div>
                             <div className="text-wrapper-6">Супер кот</div>
-                            <img className="image-2" alt="Image" src="image-2.png" />
-                            <img className="line" alt="Line" src="line-2.svg" />
+                            <div className="korm2">
+                                <img
+                                    src={korm2}
+                                    alt="korm2"
+                                />
+                            </div>
+                            <div className="line">
+                                <img
+                                    src={line}
+                                    alt="line"
+                                />
+                            </div>
                         </div>
                     </div>
-                    <img className="logo" alt="Logo" src="logo.png" />
+                    <div className="main-logo">
+                        <img
+                            src={logo}
+                            alt="valta"
+                        />
+                    </div>
                     <a className="text-wrapper-7" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
                         Основной сайт
                     </a>

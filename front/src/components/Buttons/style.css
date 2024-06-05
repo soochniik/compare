@@ -3,6 +3,7 @@
     display: inline-flex;
     flex-direction: column;
     position: relative;
+    cursor: pointer;
   }
   
   .buttons .normal {

@@ -3,6 +3,8 @@ import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
 import { Input } from "../../components/Input";
 import "./style.css";
+import logo from "../../assets/logo.png";
+
 
 export const LogIn = () => {
   return (
@@ -15,7 +17,12 @@ export const LogIn = () => {
           <Input className="input-active-2-password" input="active-2" text="Пароль" />
           <div className="text-wrapper-3">Личный кабинет</div>
         </div>
-        <img className="logo" alt="Logo" src="logo.png" />
+        <div className="main-logo">
+            <img
+                src={logo}
+                alt="valta"
+            />
+        </div>
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons button="normal" className="buttons-normal-back" text="Назад" />
         <a className="text-wrapper-4" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">

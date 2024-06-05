@@ -2,6 +2,8 @@ import React from "react";
 import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
 import "./style.css";
+import logo from "../../assets/logo.png";
+import korm from "../../assets/korm.png";
 
 export const Comparison = () => {
   return (
@@ -26,7 +28,12 @@ export const Comparison = () => {
           </div>
           <div className="text-wrapper-5">Аналоги</div>
         </div>
-        <img className="logo" alt="Logo" src="logo.png" />
+        <div className="main-logo">
+            <img
+                src={logo}
+                alt="valta"
+            />
+        </div>
         <a className="text-wrapper-6" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
           Основной сайт
         </a>
@@ -47,7 +54,12 @@ export const Comparison = () => {
           <div className="text-wrapper-4">Скидка</div>
         </div>
         <div className="text-wrapper-11">Артикул: 70081283</div>
-        <img className="image" alt="Image" src="image.png" />
+        <div className="korm">
+            <img
+                src={korm}
+                alt="korm"
+            />
+        </div>
       </div>
     </div>
   );

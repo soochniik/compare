@@ -102,27 +102,26 @@
     position: absolute;
     top: 0;
   }
-  
-  .comparison .logo {
-    height: 69px;
-    left: 57px;
-    object-fit: cover;
-    position: absolute;
-    top: 53px;
-    width: 164px;
+
+  .comparison .main-logo {
+      height: 69px !important;
+      left: 57px;
+      position: absolute;
+      top: 53px;
+      width: 164px !important;
   }
-  
+
   .comparison .text-wrapper-6 {
-    color: #000000;
-    font-family: "Jost-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    height: 26px;
-    left: 260px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 73px;
+      color: #000000;
+      font-family: "Jost", Helvetica;
+      font-size: 18px;
+      font-weight: 500;
+      height: 26px;
+      left: 259px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: absolute;
+      top: 73px;
   }
   
   .comparison .buttons-menu-normal-history {
@@ -218,7 +217,7 @@
     top: 624px;
   }
 
-  .comparison .image {
+  .comparison .korm {
     height: 177px;
     left: 116px;
     object-fit: cover;

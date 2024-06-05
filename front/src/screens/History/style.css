@@ -75,7 +75,6 @@
 .history .line {
      height: 1px;
      left: 0;
-     object-fit: cover;
      position: absolute;
      top: 96px;
      width: 1336px;
@@ -90,7 +89,7 @@
      width: 1342px;
 }
 
-history -text-wrapper-3 {
+.history .text-wrapper-3 {
     color: #000000;
     font-family: "Jost-Medium", Helvetica;
     font-size: 38px;
@@ -126,15 +125,6 @@ history -text-wrapper-3 {
     top: 118px;
 }
 
-.history .img {
-    height: 1px;
-    left: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 180px;
-    width: 1336px;
-}
-
 .history .product-2 {
     height: 97px;
     left: 0;
@@ -164,22 +154,21 @@ history -text-wrapper-3 {
     width: 71px;
 }
 
-.history .logo {
-    height: 69px;
+.history .main-logo {
+    height: 69px !important;
     left: 57px;
-    object-fit: cover;
     position: absolute;
     top: 53px;
-    width: 164px;
+    width: 164px !important;
 }
 
 .history .text-wrapper-7 {
     color: #000000;
-    font-family: "Jost-Medium", Helvetica;
+    font-family: "Jost", Helvetica;
     font-size: 18px;
     font-weight: 500;
     height: 26px;
-    left: 260px;
+    left: 259px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
