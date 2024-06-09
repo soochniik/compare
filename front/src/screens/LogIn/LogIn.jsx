@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
 import { Input } from "../../components/Input";
@@ -7,6 +8,12 @@ import logo from "../../assets/logo.png";
 
 
 export const LogIn = () => {
+  const navigate = useNavigate();
+
+  const onBackClick = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="log-in">
       <div className="div-2">
@@ -24,7 +31,7 @@ export const LogIn = () => {
             />
         </div>
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
-        <Buttons button="normal" className="buttons-normal-back" text="Назад" />
+        <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <a className="text-wrapper-4" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
           Основной сайт
         </a>

@@ -1,4 +1,5 @@
 ﻿import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
 import "./style.css";
@@ -7,6 +8,11 @@ import korm2 from "../../assets/korm2.png";
 import line from "../../assets/Line1.png";
 
 export const History = () => {
+    const navigate = useNavigate();
+
+    const onBackClick = () => {
+        navigate(-1);
+    };
     return(
            <div className = "history">
                 <div className="div-2">
@@ -64,8 +70,8 @@ export const History = () => {
                         Основной сайт
                     </a>
                     <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
-                    <Buttons button="normal" className="buttons-normal-back" text="Назад" />
-                    <p className="p">Все права защищены АО "Валта Пет Продактс", 2014 - 2024</p>
+                    <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
+                    <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
                 </div>
            </div>
     );

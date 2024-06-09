@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
@@ -7,6 +7,12 @@ import "./style.css";
 import logo from "../../assets/logo.png";
 
 export const StartPage = () => {
+  const [enteredText, setEnteredText] = useState("");
+
+  const handleInputTextChange = (text) => {
+    setEnteredText(text);
+  };
+
   const navigate = useNavigate();
 
   const onLoginClick = () => {
@@ -14,7 +20,8 @@ export const StartPage = () => {
   };
 
   const onCompareClick = () => {
-    navigate("/comparison");
+    setEnteredText(enteredText);
+    navigate(`/comparison?comparison=${enteredText}`);
   };
 
   const onHistoryClick = () => {
@@ -45,8 +52,13 @@ export const StartPage = () => {
               с аналогами по цене и актуальные акции и предложения.
             </p>
           </div>
+          <Input
+            className="input-active-comparison"
+            input="active"
+            text=""
+            onInputChange={handleInputTextChange}
+          />
           <Buttons onClick={onCompareClick} button="normal" className="buttons-normal-comparison" text="Сравнить" />
-          <Input className="input-active-comparison" input="active" text="" />
         </div>
         <div className="main-logo">
           <img

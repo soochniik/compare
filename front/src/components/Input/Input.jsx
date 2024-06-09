@@ -2,11 +2,13 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import "./style.css";
 
-export const Input = ({ input, className, text }) => {
+export const Input = ({ input, className, text, onInputChange }) => {
   const [inputText, setInputText] = useState("");
 
   const handleInputChange = (event) => {
-    setInputText(event.target.value);
+    text = event.target.value;
+    setInputText(text);
+    onInputChange(text);
   };
 
   return (
