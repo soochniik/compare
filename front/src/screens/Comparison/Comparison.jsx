@@ -13,7 +13,7 @@ export const Comparison = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/analysis', {
+        const response = await fetch('http://127.0.0.1:8000/analysis/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -45,21 +45,13 @@ export const Comparison = () => {
       <div className="div-2">
         <div className="overlap-group">
           <div className="ellipse" />
-          <div className="element">
-            <div className="text-wrapper-2">Название товара</div>
-            <div className="text-wrapper-3">Цена</div>
-            <div className="text-wrapper-4">Скидка</div>
-          </div>
-          <div className="element-2">
-            <div className="text-wrapper-2">Название товара</div>
-            <div className="text-wrapper-3">Цена</div>
-            <div className="text-wrapper-4">Скидка</div>
-          </div>
-          <div className="element-3">
-            <div className="text-wrapper-2">Название товара</div>
-            <div className="text-wrapper-3">Цена</div>
-            <div className="text-wrapper-4">Скидка</div>
-          </div>
+          {data && data.result.parsed.slice(1).map((item, index) => (
+            <div key={index} className="element">
+              <div className="text-wrapper-3">{item.store}</div>
+              <div className="text-wrapper-3">{item.name}</div>
+              <div className="text-wrapper-4">Цена: {item.price}</div>
+            </div>
+          ))}
           <div className="text-wrapper-5">Аналоги</div>
         </div>
         <div className="main-logo">
@@ -75,18 +67,12 @@ export const Comparison = () => {
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <div className="text-wrapper-7">Валта</div>
-        {data && data.result && data.result.parsed && data.result.parsed.find(item => item.store === 'valta') && (
+        {data && (
           <>
             <div className="text-wrapper-8">{data.result.parsed.find(item => item.store === 'valta').name}</div>
-            <div className="text-wrapper-9">{data.result.parsed.find(item => item.store === 'valta').price}</div>
+            <div className="text-wrapper-9">Цена: {data.result.parsed.find(item => item.store === 'valta').price}</div>
           </>
         )}
-        <div className="text-wrapper-10">Скидка: 0 р.</div>
-        <div className="element-4">
-          <div className="text-wrapper-2">Название товара</div>
-          <div className="text-wrapper-3">Цена</div>
-          <div className="text-wrapper-4">Скидка</div>
-        </div>
         <div className="text-wrapper-11">Артикул: 70081283</div>
         <div className="korm">
             <img

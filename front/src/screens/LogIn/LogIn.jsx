@@ -8,20 +8,42 @@ import logo from "../../assets/logo.png";
 
 
 export const LogIn = () => {
-  const [enteredText, setEnteredText] = useState("");
-
-  const handleInputTextChange = (text) => {
-    setEnteredText(text);
-  };
-
-  const onLoginClick = () => {
-    setEnteredText(enteredText);
-    navigate(-1);
-  };
-
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const onBackClick = () => {
+  const handleEmailChange = (event) => {
+    setEmail(event);
+  };
+  
+  const handlePasswordChange = (event) => {
+    setPassword(event); 
+  };
+
+  const handleLoginClick = async () => {
+    try {
+      // Отправка данных на сервер для аутентификации
+      const response = await fetch('http://127.0.0.1:8000/analysis/', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (response.ok) {
+        // Успешная аутентификация
+        navigate("/"); // Перенаправление на защищенную страницу
+      } else {
+        // Обработка ошибок аутентификации
+        console.error("Ошибка входа:", response.status);
+      }
+    } catch (error) {
+      console.error("Ошибка входа:", error);
+    }
+  };
+
+  const handleBackClick = () => {
     navigate(-1);
   };
 
@@ -30,9 +52,23 @@ export const LogIn = () => {
       <div className="div-2">
         <div className="overlap-group">
           <div className="ellipse" />
-          <Buttons onClick={onLoginClick} button="normal" className="buttons-normal-login" text="Войти" />
-          <Input className="input-active-2-email" input="active-2" text="E-mail или телефон" onInputChange={handleInputTextChange} type="text" />
-          <Input className="input-active-2-password" input="active-2" text="Пароль" onInputChange={handleInputTextChange} type="password" />
+          <Buttons onClick={handleLoginClick} button="normal" className="buttons-normal-login" text="Войти" />
+          <Input
+            className="input-active-2-email"
+            input="active-2"
+            text="E-mail или телефон"
+            value={email}
+            onInputChange={handleEmailChange}
+            type="text"
+          />
+          <Input
+            className="input-active-2-password"
+            input="active-2"
+            text="Пароль"
+            value={password}
+            onInputChange={handlePasswordChange}
+            type="password"
+          />
           <div className="text-wrapper-3">Личный кабинет</div>
         </div>
         <div className="main-logo">
@@ -42,7 +78,7 @@ export const LogIn = () => {
             />
         </div>
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
-        <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
+        <Buttons onClick={handleBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <a className="text-wrapper-4" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
           Основной сайт
         </a>

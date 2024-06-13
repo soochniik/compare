@@ -58,6 +58,7 @@ export const StartPage = () => {
             text=""
             onInputChange={handleInputTextChange}
             type="text"
+            value={enteredText}
           />
           <Buttons onClick={onCompareClick} button="normal" className="buttons-normal-comparison" text="Сравнить" />
         </div>
