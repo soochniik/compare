@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Buttons } from "../../components/Buttons";
 import { ButtonsMenu } from "../../components/ButtonsMenu";
@@ -7,11 +7,39 @@ import logo from "../../assets/logo.png";
 import korm from "../../assets/korm.png";
 
 export const Comparison = () => {
+  const [data, setData] = useState(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/analysis', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            vendor_code: "1111",
+            user: {
+              username: "username"
+            }
+          })
+        });
+        const responseData = await response.json();
+        setData(responseData);
+        console.log("responseData:", responseData);
+      } catch (error) {
+        console.error('Ошибка:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const onBackClick = () => {
     navigate(-1);
   };
+
   return (
     <div className="comparison">
       <div className="div-2">
@@ -47,12 +75,12 @@ export const Comparison = () => {
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <div className="text-wrapper-7">Валта</div>
-        <p className="text-wrapper-8">
-          Ветеринарная диета Monge VetSolution <br />
-          Dog Diabetic Диабетик для собак при <br />
-          сахарном диабете 12 кг
-        </p>
-        <div className="text-wrapper-9">Цена: 10 384 р.</div>
+        {data && data.result && data.result.parsed && data.result.parsed.find(item => item.store === 'valta') && (
+          <>
+            <div className="text-wrapper-8">{data.result.parsed.find(item => item.store === 'valta').name}</div>
+            <div className="text-wrapper-9">{data.result.parsed.find(item => item.store === 'valta').price}</div>
+          </>
+        )}
         <div className="text-wrapper-10">Скидка: 0 р.</div>
         <div className="element-4">
           <div className="text-wrapper-2">Название товара</div>

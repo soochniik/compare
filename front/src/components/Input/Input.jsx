@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import "./style.css";
 
-export const Input = ({ input, className, text, onInputChange }) => {
+export const Input = ({ input, className, text, onInputChange, type }) => {
   const [inputText, setInputText] = useState("");
 
   const handleInputChange = (event) => {
@@ -13,7 +13,7 @@ export const Input = ({ input, className, text, onInputChange }) => {
 
   return (
     <input
-      type="text"
+      type={type}
       value={inputText}
       onChange={handleInputChange}
       placeholder={text}
