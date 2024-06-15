@@ -47,9 +47,10 @@ export const Comparison = () => {
           <div className="ellipse" />
           {data && data.result.parsed.slice(1).map((item, index) => (
             <div key={index} className="element">
-              <div className="text-wrapper-3">{item.store}</div>
+              <div className="text-wrapper-2">Продавец: {item.store}</div>
               <div className="text-wrapper-3">{item.name}</div>
               <div className="text-wrapper-4">Цена: {item.price}</div>
+              <div className="desc-analog">Описание: {item.desc}</div>
             </div>
           ))}
           <div className="text-wrapper-5">Аналоги</div>
@@ -71,14 +72,15 @@ export const Comparison = () => {
           <>
             <div className="text-wrapper-8">{data.result.parsed.find(item => item.store === 'valta').name}</div>
             <div className="text-wrapper-9">Цена: {data.result.parsed.find(item => item.store === 'valta').price}</div>
+            <div className="desc-valta">Описание: {data.result.parsed.find(item => item.store === 'valta').desc}</div>
           </>
         )}
         <div className="text-wrapper-11">Артикул: 70081283</div>
         <div className="korm">
-            <img
-                src={korm}
-                alt="korm"
-            />
+          <img
+              src={korm}
+              alt="korm"
+          />
         </div>
       </div>
     </div>

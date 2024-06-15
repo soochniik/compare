@@ -32,30 +32,29 @@
   }
   
   .comparison .element {
-    height: 95px;
+    height: auto;
     left: 52px;
     position: absolute;
     top: 63px;
-    width: 160px;
+    width: 549px;
   }
   
   .comparison .text-wrapper-2 {
     color: #000000;
-    font-family: "Jost-Medium", Helvetica;
+    font-family: "Jost-Regular", Helvetica;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     left: 0;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 0;
   }
   
   .comparison .text-wrapper-3 {
     color: #000000;
-    font-family: "Jost-Medium", Helvetica;
+    font-family: "Jost-Regular", Helvetica;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     left: 0;
     letter-spacing: 0;
     line-height: normal;
@@ -65,32 +64,31 @@
   
   .comparison .text-wrapper-4 {
     color: #000000;
-    font-family: "Jost-Medium", Helvetica;
+    font-family: "Jost-Regular", Helvetica;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     left: 0;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 66px;
+    top: 125px;
   }
-  
-  .comparison .element-2 {
-    height: 95px;
-    left: 52px;
+
+
+  .comparison .desc-analog {
+    color: #000000;
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
     position: absolute;
-    top: 213px;
-    width: 160px;
+    top: 162px;
+    width: 549px;
   }
   
-  .comparison .element-3 {
-    height: 95px;
-    left: 52px;
-    position: absolute;
-    top: 363px;
-    width: 160px;
-  }
-  
+
   .comparison .text-wrapper-5 {
     color: #000000;
     font-family: "Jost-Medium", Helvetica;
@@ -140,7 +138,7 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 976px;
+    top: 1500px;
   }
   
   .comparison .buttons-normal-back {
@@ -163,14 +161,15 @@
   
   .comparison .text-wrapper-8 {
     color: #000000;
-    font-family: "Jost-Medium", Helvetica;
-    font-size: 25px;
-    font-weight: 500;
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
     left: 117px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 497px;
+    top: 520px;
+    width: 549px;
   }
   
   .comparison .text-wrapper-9 {
@@ -178,7 +177,7 @@
     font-family: "Jost-Regular", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    left: 116px;
+    left: 117px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
@@ -190,11 +189,24 @@
     font-family: "Jost-Regular", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    left: 116px;
+    left: 117px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     top: 706px;
+  }
+
+  .comparison .desc-valta {
+    color: #000000;
+    font-family: "Jost-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 117px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 736px;
+    width: 549px;
   }
   
   .comparison .element-4 {
