@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRoutes } from "react-router-dom";
 import { StartPage } from "./screens/StartPage";
 import { Comparison } from "./screens/Comparison";
@@ -6,6 +6,7 @@ import { LogIn } from "./screens/LogIn";
 import { History } from "./screens/History";
 
 const ProjectRoutes = () => {
+    const [token, setToken] = useState(null);
     let element = useRoutes([ 
         { 
             path: "/",
@@ -13,11 +14,11 @@ const ProjectRoutes = () => {
         },
         { 
             path: "/login",
-            element: <LogIn />,
+            element: <LogIn setToken={setToken} />,
         },
         { 
             path: "/comparison",
-            element: <Comparison />,
+            element: <Comparison token={token} />,
         },
         { 
             path: "/history",

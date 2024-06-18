@@ -7,13 +7,13 @@ import "./style.css";
 import logo from "../../assets/logo.png";
 
 
-export const LogIn = () => {
-  const [email, setEmail] = useState("");
+export const LogIn = ({ setToken }) => {
+  const [username, setUser] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleEmailChange = (event) => {
-    setEmail(event);
+  const handleUserChange = (event) => {
+    setUser(event);
   };
   
   const handlePasswordChange = (event) => {
@@ -22,20 +22,23 @@ export const LogIn = () => {
 
   const handleLoginClick = async () => {
     try {
-      // Отправка данных на сервер для аутентификации
-      const response = await fetch('http://127.0.0.1:8000/analysis/', {
+      const response = await fetch('http://127.0.0.1:8000/login/', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({
+          username: username,
+          password: password,
+        })
       });
 
       if (response.ok) {
-        // Успешная аутентификация
+        const data = await response.json();
+        // Сохраняем токен в состоянии родительского компонента
+        setToken(data.token);
         navigate("/"); // Перенаправление на защищенную страницу
       } else {
-        // Обработка ошибок аутентификации
         console.error("Ошибка входа:", response.status);
       }
     } catch (error) {
@@ -57,8 +60,8 @@ export const LogIn = () => {
             className="input-active-2-email"
             input="active-2"
             text="E-mail или телефон"
-            value={email}
-            onInputChange={handleEmailChange}
+            value={username}
+            onInputChange={handleUserChange}
             type="text"
           />
           <Input
@@ -87,3 +90,5 @@ export const LogIn = () => {
     </div>
   );
 };
+
+export default LogIn;
