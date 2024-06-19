@@ -20,8 +20,13 @@ export const StartPage = () => {
   };
 
   const onCompareClick = () => {
-    setEnteredText(enteredText);
-    navigate(`/comparison?comparison=${enteredText}`);
+    if (/^[a-zA-Z0-9]{6,}$/.test(enteredText)) {
+      setEnteredText(enteredText);
+      navigate(`/comparison?comparison=${enteredText}`);
+    }
+    else {
+      alert("Артикул должен содержать не менее 6 латинских символов или цифр!");
+    }
   };
 
   const onHistoryClick = () => {

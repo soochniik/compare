@@ -1,4 +1,4 @@
-﻿.history {
+﻿﻿.history {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -32,61 +32,25 @@
 }
 
 .history .product {
-    height: 98px;
-    left: 0;
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 40px;
+    letter-spacing: 0;
+    line-height: normal;
     position: absolute;
-    top: 201px;
-    width: 1340px;
-}
-
-.history .image {
-    height: 71px;
-    left: 16px;
-    object-fit: cover;
-    position: absolute;
-    top: 1px;
-    width: 71px;
-}
-
-.history .monge-vetsolution {
-     color: #000000;
-     font-family: "Jost-Medium", Helvetica;
-     font-size: 18px;
-     font-weight: 500;
-     left: 121px;
-     letter-spacing: 0;
-     line-height: normal;
-     position: absolute;
-     top: 0;
-}
-
-.history .text-wrapper-2 {
-     color: #000000;
-     font-family: "Jost-Medium", Helvetica;
-     font-size: 20px;
-     font-weight: 500;
-     left: 1091px;
-     letter-spacing: 0;
-     line-height: normal;
-     position: absolute;
-     top: 20px;
-}
-
-.history .line {
-     height: 1px;
-     left: 0;
-     position: absolute;
-     top: 96px;
-     width: 1336px;
+    top: 90px;
+    text-decoration: underline;
 }
 
 .history .header {
-     background-color: transparent;
-     height: 182px;
-     left: 0;
-     position: absolute;
-     top: 0;
-     width: 1342px;
+    background-color: transparent;
+    height: 182px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1342px;
 }
 
 .history .text-wrapper-3 {
@@ -101,36 +65,17 @@
     top: 0;
 }
 
-.history .text-wrapper-4 {
-    color: #000000;
-    font-family: "Jost-Medium", Helvetica;
-    font-size: 30px;
-    font-weight: 500;
-    left: 61px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 118px;
-}
-
-.history .text-wrapper-5 {
-    color: #000000;
-    font-family: "Jost-Medium", Helvetica;
-    font-size: 30px;
-    font-weight: 500;
-    left: 1046px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 118px;
-}
-
 .history .product-2 {
-    height: 97px;
-    left: 0;
+    color: #000000;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 40px;
+    letter-spacing: 0;
+    line-height: normal;
     position: absolute;
-    top: 322px;
-    width: 1340px;
+    top: 140px;
+    text-decoration: underline;
 }
 
 .history .text-wrapper-6 {
@@ -138,20 +83,11 @@
     font-family: "Jost-Medium", Helvetica;
     font-size: 18px;
     font-weight: 500;
-    left: 121px;
+    left: 61px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 23px;
-}
-
-.history .image-2 {
-    height: 71px;
-    left: 16px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    width: 71px;
+    top: 361px;
 }
 
 .history .main-logo {
