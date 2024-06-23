@@ -14,33 +14,41 @@
 }
 
 .history .overlap-group {
-    height: 481px;
     left: 42px;
     position: absolute;
-    top: 202px;
-    width: 1342px;
+    top: 292px;
+    display: flex;
+    flex-direction: column;
 }
 
 .history .ellipse {
     background-color: #66bc5459;
     border-radius: 214px;
     height: 428px;
-    left: 677px;
+    left: 719px;
     position: absolute;
-    top: 53px;
+    top: 255px;
     width: 428px;
 }
 
 .history .product {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.history .product-content {
     color: #000000;
     font-family: "Jost-Medium", Helvetica;
     font-size: 18px;
     font-weight: 500;
-    left: 40px;
     letter-spacing: 0;
     line-height: normal;
-    position: absolute;
-    top: 90px;
+}
+
+.history .elem {
+    cursor: pointer;
     text-decoration: underline;
 }
 
@@ -49,7 +57,7 @@
     height: 182px;
     left: 0;
     position: absolute;
-    top: 0;
+    top: 202px;
     width: 1342px;
 }
 
@@ -63,19 +71,6 @@
     line-height: normal;
     position: absolute;
     top: 0;
-}
-
-.history .product-2 {
-    color: #000000;
-    font-family: "Jost-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 40px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 140px;
-    text-decoration: underline;
 }
 
 .history .text-wrapper-6 {
