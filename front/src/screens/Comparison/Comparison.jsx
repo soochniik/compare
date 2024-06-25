@@ -23,7 +23,7 @@ export const Comparison = ({ token }) => {
 
         const fetchData = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:8000/analysis/', {
+                const response = await fetch('http://172.20.10.10:8000/analysis/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

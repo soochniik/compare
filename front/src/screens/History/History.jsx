@@ -12,7 +12,7 @@ export const History = ({ token }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:8000/history/', {
+                const response = await fetch('http://172.20.10.10:8000/history/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
