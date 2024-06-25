@@ -12,7 +12,7 @@ const ProjectRoutes = () => {
     let element = useRoutes([ 
         { 
             path: "/",
-            element: <StartPage />,
+            element: <StartPage token={token} setToken={setToken} />,
         },
         { 
             path: "/login",

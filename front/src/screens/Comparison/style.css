@@ -92,6 +92,12 @@
   top: 74px !important;
 }
 
+.comparison .buttons-menu-normal-graph {
+  left: 621px !important;
+  position: absolute !important;
+  top: 74px !important;
+}
+
 .comparison .p {
   color: #000000;
   font-family: "Jost", Helvetica;

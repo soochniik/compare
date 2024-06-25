@@ -86,6 +86,7 @@ export const LogIn = ({ setToken }) => {
           Основной сайт
         </a>
         <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        <ButtonsMenu button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
       </div>
     </div>
   );

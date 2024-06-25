@@ -22,6 +22,14 @@ export const Graphs = ({ token }) => {
     setStore(event);
   };
 
+  const onHistoryClick = () => {
+    navigate("/history");
+  };
+
+  const onCompareClick = () => {
+    navigate("/");
+  };
+
   const handleGraphClick = async () => {
     try {
       const response = await fetch('http://172.20.10.10:8000/graph/', {
@@ -83,6 +91,9 @@ export const Graphs = ({ token }) => {
   return (
     <div className="graph">
       <div className="div-2">
+        <div className="styka">
+          <canvas id="myChart"></canvas>
+        </div>
         <div className="overlap-group">
           <div className="ellipse" />
           <Buttons onClick={handleGraphClick} button="normal" className="buttons-normal-graph" text="Построить график" />
@@ -102,9 +113,8 @@ export const Graphs = ({ token }) => {
             onInputChange={handleStoreChange}
             type="text"
           />
-          <div className="text-wrapper-3">Личный кабинет</div>
+          <div className="text-wrapper-3">Мониторинг цен</div>
         </div>
-        <canvas id="myChart"></canvas>
         <div className="main-logo">
           <img
             src={logo}
@@ -116,7 +126,8 @@ export const Graphs = ({ token }) => {
         <a className="text-wrapper-4" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
           Основной сайт
         </a>
-        <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        <ButtonsMenu onClick={onCompareClick} button="normal" className="buttons-menu-normal-compare" text="Сравнить товары" />
       </div>
     </div>
   );

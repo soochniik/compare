@@ -60,7 +60,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 0;
+  top: 64px;
 }
 
 .start-page .span {
@@ -80,7 +80,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 64px;
+  top: 128px;
 }
 
 .start-page .text-wrapper-6 {
@@ -92,19 +92,31 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 102px;
+  top: 166px;
+}
+
+.start-page .text-wrapper-9 {
+  color: #000000;
+  font-family: "Jost-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0px;
 }
 
 .start-page .buttons-normal-comparison {
   left: 195px !important;
   position: absolute !important;
-  top: 391px !important;
+  top: 421px !important;
 }
 
 .start-page .input-active-comparison {
   left: 35px !important;
   position: absolute !important;
-  top: 326px !important;
+  top: 366px !important;
 }
 
 .start-page .main-logo {
@@ -149,6 +161,12 @@
 
 .start-page .buttons-menu-normal-history {
   left: 420px !important;
+  position: absolute !important;
+  top: 74px !important;
+}
+
+.start-page .buttons-menu-normal-graph {
+  left: 621px !important;
   position: absolute !important;
   top: 74px !important;
 }

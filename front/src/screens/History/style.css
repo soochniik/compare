@@ -112,6 +112,12 @@
     top: 74px !important;
 }
 
+.history .buttons-menu-normal-graph {
+    left: 596px !important;
+    position: absolute !important;
+    top: 74px !important;
+  }
+
 .history .buttons-normal-back {
     left: 1291px !important;
     position: absolute !important;

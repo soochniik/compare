@@ -1,109 +1,123 @@
 .graph {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .graph .div-2 {
-    background-color: #ffffff;
-    height: 1024px;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .graph .overlap-group {
-    height: 428px;
-    left: 569px;
-    position: absolute;
-    top: 255px;
-    width: 578px;
-  }
-  
-  .graph .ellipse {
-    background-color: #66bc5459;
-    border-radius: 214px;
-    height: 428px;
-    left: 150px;
-    position: absolute;
-    top: 0;
-    width: 428px;
-  }
-  
-  .graph .buttons-normal-graph {
-    left: 105px !important;
-    position: absolute !important;
-    top: 333px !important;
-  }
-  
-  .graph .input-active-2-code {
-    left: 0 !important;
-    position: absolute !important;
-    top: 195px !important;
-  }
-  
-  .graph .input-active-2-store {
-    left: 0 !important;
-    position: absolute !important;
-    top: 249px !important;
-  }
-  
-  .graph .text-wrapper-3 {
-    color: #000000;
-    font-family: "Jost-Medium", Helvetica;
-    font-size: 38px;
-    font-weight: 500;
-    left: 9px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 116px;
-  }
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.graph .div-2 {
+  background-color: #ffffff;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.graph .overlap-group {
+  height: 428px;
+  left: 569px;
+  position: absolute;
+  top: 255px;
+  width: 578px;
+}
+
+.graph .ellipse {
+  background-color: #66bc5459;
+  border-radius: 214px;
+  height: 428px;
+  left: 150px;
+  position: absolute;
+  top: 0;
+  width: 428px;
+}
+
+.graph .buttons-normal-graph {
+  left: 105px !important;
+  position: absolute !important;
+  top: 333px !important;
+}
+
+.graph .input-active-2-code {
+  left: 0 !important;
+  position: absolute !important;
+  top: 195px !important;
+}
+
+.graph .input-active-2-store {
+  left: 0 !important;
+  position: absolute !important;
+  top: 249px !important;
+}
+
+.graph .text-wrapper-3 {
+  color: #000000;
+  font-family: "Jost-Medium", Helvetica;
+  font-size: 38px;
+  font-weight: 500;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 116px;
+}
 
 .graph .main-logo {
-    height: 69px !important;
-    left: 57px;
-    position: absolute;
-    top: 53px;
-    width: 164px !important;
+  height: 69px !important;
+  left: 57px;
+  position: absolute;
+  top: 53px;
+  width: 164px !important;
 }
-  
-  .graph .p {
+
+.graph .p {
+  color: #000000;
+  font-family: "Jost", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 26px;
+  left: 51px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 976px;
+}
+
+.graph .buttons-normal-back {
+  left: 1291px !important;
+  position: absolute !important;
+  top: 69px !important;
+}
+
+.graph .text-wrapper-4 {
     color: #000000;
     font-family: "Jost", Helvetica;
     font-size: 18px;
     font-weight: 500;
     height: 26px;
-    left: 51px;
+    left: 259px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 976px;
-  }
-  
-  .graph .buttons-normal-back {
-    left: 1291px !important;
-    position: absolute !important;
-    top: 69px !important;
-  }
+    top: 73px;
+}
 
-  .graph .text-wrapper-4 {
-      color: #000000;
-      font-family: "Jost", Helvetica;
-      font-size: 18px;
-      font-weight: 500;
-      height: 26px;
-      left: 259px;
-      letter-spacing: 0;
-      line-height: normal;
-      position: absolute;
-      top: 73px;
-  }
-  
-  .graph .buttons-menu-normal-history {
-    left: 420px !important;
+.graph .buttons-menu-normal-history {
+  left: 420px !important;
+  position: absolute !important;
+  top: 74px !important;
+}
+
+  .graph .buttons-menu-normal-compare {
+    left: 621px !important;
     position: absolute !important;
     top: 74px !important;
   }
+
+.graph .styka {
+    width: 1152px;
+    height: 666px;
+    top: 206px;
+    left: 139px;
+    position: absolute;
+}
   

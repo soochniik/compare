@@ -6,7 +6,7 @@ import { Input } from "../../components/Input";
 import "./style.css";
 import logo from "../../assets/logo.png";
 
-export const StartPage = () => {
+export const StartPage = ({ token, setToken }) => {
   const [enteredText, setEnteredText] = useState("");
 
   const handleInputTextChange = (text) => {
@@ -17,6 +17,10 @@ export const StartPage = () => {
 
   const onLoginClick = () => {
     navigate("/login");
+  };
+
+  const onLogoutClick = () => {
+    setToken("");
   };
 
   const onCompareClick = () => {
@@ -32,6 +36,10 @@ export const StartPage = () => {
   const onHistoryClick = () => {
     navigate("/history");
   };
+
+  const onGraphClick = () => {
+    navigate("/graphs");
+  };
   
   return (
     <div className="start-page">
@@ -42,7 +50,7 @@ export const StartPage = () => {
           <div className="instuction">
             <p className="p">
               <span className="span">
-                1. Для сравнения продуктов с аналогами введите в поле ниже <br/>
+                2. Для сравнения продуктов с аналогами введите в поле ниже <br/>
                 артикул товара с нашего{" "}
               </span>
               <a href="https://valta.ru/catalog/" rel="noopener noreferrer" target="_blank">
@@ -50,9 +58,13 @@ export const StartPage = () => {
               </a>
               <span className="span">. Он расположен в карточке товара.</span>
             </p>
-            <p className="text-wrapper-5">2. После ввода артикула нажмите на кнопку “Сравнить”.</p>
+            <p className="text-wrapper-9"> 1. Для начала сравнения, пожалуйста, зайдите в свой личный
+                <br/>
+                кабинет - без него сравнение невозможно.
+            </p>
+            <p className="text-wrapper-5">3. После ввода артикула нажмите на кнопку “Сравнить”.</p>
             <p className="text-wrapper-6">
-              3. После нажатия вы увидите результаты сравнения наших товаров
+              4. После нажатия вы увидите результаты сравнения наших товаров
               <br />
               с аналогами по цене и актуальные акции и предложения.
             </p>
@@ -77,8 +89,13 @@ export const StartPage = () => {
           Основной сайт
         </a>
         <p className="text-wrapper-8">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
-        <Buttons onClick={onLoginClick} button="normal" className="buttons-normal-lk" text="Личный кабинет" />
+        {token ? (
+          <Buttons onClick={onLogoutClick} button="normal" className="buttons-normal-lk" text="Выйти" />
+        ) : (
+          <Buttons onClick={onLoginClick} button="normal" className="buttons-normal-lk" text="Личный кабинет" />
+        )}
         <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
       </div>
     </div>
   );

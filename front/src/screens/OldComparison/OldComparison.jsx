@@ -54,6 +54,10 @@ export const OldComparison = ({ token }) => {
     navigate("/history");
   };
 
+  const onGraphClick = () => {
+    navigate("/graphs");
+  };
+
   const handleDocumentClick = (e) => {
       if (groupRef.current && !groupRef.current.contains(e.target)) {
           setShowDescription(false); // Закрываем выпадающее описание при клике вне кнопки
@@ -123,6 +127,7 @@ export const OldComparison = ({ token }) => {
           Основной сайт
         </a>
         <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <div className="text-wrapper-7">Валта</div>

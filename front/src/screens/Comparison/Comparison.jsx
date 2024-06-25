@@ -26,18 +26,27 @@ export const Comparison = ({ token }) => {
                 const response = await fetch('http://172.20.10.10:8000/analysis/', {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json'
+                      'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        vendor_code: vendorCode.toString(),
-                        token: token,
+                      vendor_code: vendorCode.toString(),
+                      token: token,
                     })
                 });
                 const responseData = await response.json();
-                setData(responseData);
-                console.log("responseData:", responseData);
+        
+                if (responseData !== "Error") {
+                  setData(responseData);
+                  console.log("responseData:", responseData);
+                } else {
+                  if (responseData === "Error") {
+                    window.alert("Артикул не найден");
+                  } else {
+                    console.error('Произошла ошибка, но сервер не вернул текст ошибки');
+                  }
+                }
             } catch (error) {
-                console.error('Ошибка:', error);
+              console.error('Ошибка:', error);
             }
         };
 
@@ -51,6 +60,10 @@ export const Comparison = ({ token }) => {
 
   const onHistoryClick = () => {
     navigate("/history");
+  };
+
+  const onGraphClick = () => {
+    navigate("/graphs");
   };
 
   const handleDocumentClick = (e) => {
@@ -93,7 +106,7 @@ export const Comparison = ({ token }) => {
         <div className="ellipse" />
         <div className="overlap-group">
           <div className="text-wrapper-5">Аналоги</div>
-          {data && data.map((item, index) => (
+          {data && data !== "Error" && data.map((item, index) => (
             item.store.name !== "Valta" &&
               <div key={index} className={"element"}>
                 <div className="element-content">
@@ -122,10 +135,11 @@ export const Comparison = ({ token }) => {
           Основной сайт
         </a>
         <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <div className="text-wrapper-7">Валта</div>
-        {data && data.find(item => item.store.name === 'Valta') && (
+        {data && data !== "Error" && data.find(item => item.store.name === 'Valta') && (
           <>
             <div className="text-wrapper-8">{data.find(item => item.store.name === 'Valta').name}</div>
             <div className="text-wrapper-9">Цена: {data.find(item => item.store.name === 'Valta').price}</div>
@@ -134,7 +148,7 @@ export const Comparison = ({ token }) => {
         <div className="text-wrapper-11">Артикул: {vendor}</div> {/* Используем значение vendor здесь */}
         <div className="group" ref={groupRef} onClick={onGroupClick}>
             Описание
-            {showDescription && data &&
+            {showDescription && data && data !== "Error" &&
                 <div className="description">
                     <div className="desc-valta">{data.find(item => item.store.name === 'Valta').text}</div>
                 </div>

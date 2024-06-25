@@ -38,6 +38,9 @@ export const History = ({ token }) => {
     const onCompareClick = () => {
         navigate("/");
     };
+    const onGraphClick = () => {
+        navigate("/graphs");
+    };
     const tokenClick = (code, date) => {
         navigate(`/oldcomparison?oldcomparison=${code}_${date}`);
     };
@@ -69,6 +72,7 @@ export const History = ({ token }) => {
                     Основной сайт
                 </a>
                 <ButtonsMenu onClick={onCompareClick} button="normal" className="buttons-menu-normal-history" text="Сравнить товары" />
+                <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
                 <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
                 <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
             </div>
