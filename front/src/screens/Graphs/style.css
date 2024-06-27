@@ -32,9 +32,9 @@
 }
 
 .graph .buttons-normal-graph {
-  left: 105px !important;
+  margin: 0 auto;
   position: absolute !important;
-  top: 333px !important;
+  top: 323px !important;
 }
 
 .graph .input-active-2-code {
@@ -79,7 +79,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 976px;
+  top: 1486px;
 }
 
 .graph .buttons-normal-back {
@@ -116,7 +116,7 @@
 .graph .styka {
     width: 1152px;
     height: 666px;
-    top: 206px;
+    top: 764px;
     left: 139px;
     position: absolute;
 }

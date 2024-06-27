@@ -85,8 +85,8 @@ export const LogIn = ({ setToken }) => {
         <a className="text-wrapper-4" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
           Основной сайт
         </a>
-        <ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
-        <ButtonsMenu button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
+        {/*<ButtonsMenu button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        <ButtonsMenu button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />*/}
       </div>
     </div>
   );

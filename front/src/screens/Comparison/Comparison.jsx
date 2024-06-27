@@ -106,7 +106,7 @@ export const Comparison = ({ token }) => {
         <div className="ellipse" />
         <div className="overlap-group">
           <div className="text-wrapper-5">Аналоги</div>
-          {data && data !== "Error" && data.map((item, index) => (
+          {data && data !== "Error" && data.result.map((item, index) => (
             item.store.name !== "Valta" &&
               <div key={index} className={"element"}>
                 <div className="element-content">
@@ -139,21 +139,27 @@ export const Comparison = ({ token }) => {
         <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <div className="text-wrapper-7">Валта</div>
-        {data && data !== "Error" && data.find(item => item.store.name === 'Valta') && (
+        {data && data !== "Error" && data.result.find(item => item.store.name === 'Valta') && (
           <>
-            <div className="text-wrapper-8">{data.find(item => item.store.name === 'Valta').name}</div>
-            <div className="text-wrapper-9">Цена: {data.find(item => item.store.name === 'Valta').price}</div>
+            <div className="text-wrapper-8">{data.result.find(item => item.store.name === 'Valta').name}</div>
+            <div className="text-wrapper-9">Цена: {data.result.find(item => item.store.name === 'Valta').price}</div>
           </>
         )}
-        <div className="text-wrapper-11">Артикул: {vendor}</div> {/* Используем значение vendor здесь */}
+        <div className="text-wrapper-11">Артикул: {vendor}</div>
         <div className="group" ref={groupRef} onClick={onGroupClick}>
-            Описание
-            {showDescription && data && data !== "Error" &&
-                <div className="description">
-                    <div className="desc-valta">{data.find(item => item.store.name === 'Valta').text}</div>
-                </div>
-            }
+          Описание
+          {showDescription && data && data !== "Error" &&
+            <div className="description">
+                <div className="desc-valta">{data.result.find(item => item.store.name === 'Valta').text}</div>
+            </div>
+          }
         </div>
+        <div className="recommend">Рекомендуем</div>
+        {data && data !== "Error" && data.similar.map((item, index) => (
+          <div key={index} className={"similar"}>
+            <div className="similar-content">{item.name}, Артикул: {item.vendor_code}</div>
+          </div>
+        ))}
       </div>
     </div>
   );

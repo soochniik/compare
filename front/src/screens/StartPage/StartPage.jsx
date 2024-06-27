@@ -77,7 +77,9 @@ export const StartPage = ({ token, setToken }) => {
             type="text"
             value={enteredText}
           />
-          <Buttons onClick={onCompareClick} button="normal" className="buttons-normal-comparison" text="Сравнить" />
+          {token ? (
+            <Buttons onClick={onCompareClick} button="normal" className="buttons-normal-comparison" text="Сравнить" />
+          ) : null }
         </div>
         <div className="main-logo">
           <img
@@ -94,9 +96,13 @@ export const StartPage = ({ token, setToken }) => {
         ) : (
           <Buttons onClick={onLoginClick} button="normal" className="buttons-normal-lk" text="Личный кабинет" />
         )}
-        <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
-        <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
-      </div>
+        {token ? (
+          <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
+        ) : null }
+        {token ? (
+          <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
+        ) : null }
+        </div>
     </div>
   );
 };
