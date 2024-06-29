@@ -19,7 +19,7 @@ export const Graphs = ({ token }) => {
   };
 
   const handleStoreChange = (event) => {
-    setStore(event);
+    setStore(event.target.value);
   };
 
   const onHistoryClick = () => {
@@ -32,7 +32,7 @@ export const Graphs = ({ token }) => {
 
   const handleGraphClick = async () => {
     try {
-      const response = await fetch('http://172.20.10.10:8000/graph/', {
+      const response = await fetch('http://10.10.208.11:8000/graph/', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -105,14 +105,19 @@ export const Graphs = ({ token }) => {
             onInputChange={handleCodeChange}
             type="text"
           />
-          <Input
+          <select
             className="input-active-2-store"
-            input="active-2"
-            text="Магазин"
             value={store}
-            onInputChange={handleStoreChange}
-            type="text"
-          />
+            onChange={handleStoreChange}>
+            <option value="Valta">Valta</option>
+            <option value="Old_farm">Old_farm</option>
+            <option value="Bethoven">Bethoven</option>
+            <option value="4_Lapy">4_Lapy</option>
+            <option value="Kotmatros">Kotmatros</option>
+            <option value="Magizoo">Magizoo</option>
+            <option value="Zoomag">Zoomag</option>
+            <option value="Zoozavr">Zoozavr</option>
+          </select>
           <div className="text-wrapper-3">Мониторинг цен</div>
         </div>
         <div className="main-logo">

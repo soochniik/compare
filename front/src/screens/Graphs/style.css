@@ -47,6 +47,13 @@
   left: 0 !important;
   position: absolute !important;
   top: 249px !important;
+  border: 1px solid #66BC54;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 300px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .graph .text-wrapper-3 {
