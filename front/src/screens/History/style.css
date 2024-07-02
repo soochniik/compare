@@ -14,11 +14,19 @@
 }
 
 .history .overlap-group {
-    left: 42px;
-    position: absolute;
-    top: 292px;
-    display: flex;
-    flex-direction: column;
+    width: 437px;
+    position: relative;
+    top: 281px;
+    left: 534px;
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border: 2px solid #66BC54;
+    border-radius: 25% 10%;
+    border-collapse: separate;
+    border-spacing: 50px 1rem;
+    padding: 30px 25px 10px 35px;
 }
 
 .history .ellipse {
@@ -27,29 +35,29 @@
     height: 428px;
     left: 719px;
     position: absolute;
-    top: 255px;
+    top: 235px;
     width: 428px;
-}
-
-.history .product {
-    margin-left: 60px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.history .product-content {
-    color: #000000;
-    font-family: "Jost-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: normal;
 }
 
 .history .elem {
     cursor: pointer;
     text-decoration: underline;
+    padding: 30px 25px 10px 35px;
+}
+
+.history .table {
+    font-family: "Jost-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px 25px 10px 35px;
+    width: 397px;
+    left: 695px;
+    top: 301px
+}
+
+.history .td {
+    text-align: match-parent;
+    letter-spacing: 3px;
 }
 
 .history .header {
@@ -113,10 +121,10 @@
 }
 
 .history .buttons-menu-normal-graph {
-    left: 596px !important;
+    left: 621px !important;
     position: absolute !important;
     top: 74px !important;
-  }
+}
 
 .history .buttons-normal-back {
     left: 1291px !important;

@@ -6,6 +6,7 @@ import { LogIn } from "./screens/LogIn";
 import { History } from "./screens/History";
 import { OldComparison } from "screens/OldComparison";
 import { Graphs } from "screens/Graphs";
+import { TwoProducts } from "screens/TwoProducts";
 
 const ProjectRoutes = () => {
     const [token, setToken] = useState(null);
@@ -29,6 +30,10 @@ const ProjectRoutes = () => {
         {
             path: "/oldcomparison",
             element: <OldComparison token={token} />,
+        },
+        {
+            path: "/twoproducts",
+            element: <TwoProducts token={token} />,
         },
         {
             path: "/graphs",

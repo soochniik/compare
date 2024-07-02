@@ -40,6 +40,10 @@ export const StartPage = ({ token, setToken }) => {
   const onGraphClick = () => {
     navigate("/graphs");
   };
+
+  const onTwoClick = () => {
+    navigate("/twoproducts");
+  };
   
   return (
     <div className="start-page">
@@ -101,6 +105,9 @@ export const StartPage = ({ token, setToken }) => {
         ) : null }
         {token ? (
           <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
+        ) : null }
+        {token ? (
+          <ButtonsMenu onClick={onTwoClick} button="normal" className="buttons-menu-normal-two" text="Сравнить 2 товара" />
         ) : null }
         </div>
     </div>

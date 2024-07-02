@@ -24,7 +24,7 @@ export const OldComparison = ({ token }) => {
 
         const fetchData = async () => {
             try {
-                const response = await fetch('http://172.20.10.10:8000/product_history/', {
+                const response = await fetch('http://10.10.208.11:8000/product_history/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -128,7 +128,6 @@ export const OldComparison = ({ token }) => {
         </a>
         <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
         <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
-        <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
         <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <div className="text-wrapper-7">Валта</div>
         {data && data.find(item => item.store.name === 'Valta') && (

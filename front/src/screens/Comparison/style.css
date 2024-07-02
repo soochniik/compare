@@ -98,6 +98,12 @@
   top: 74px !important;
 }
 
+.comparison .buttons-menu-normal-two {
+  left: 800px !important;
+  position: absolute !important;
+  top: 74px !important;
+}
+
 .comparison .p {
   color: #000000;
   font-family: "Jost", Helvetica;
@@ -220,7 +226,6 @@
   width: 100%;
   height: 45px;
   left: 108px;
-  background-color: #ffffff;
   border: 1px solid #66bc54;
   border-radius: 7px;
   display: flex;
@@ -277,47 +282,16 @@
 .comparison .description {
     position: absolute;
     top: 55px; /* Adjust this value as needed */
-    background-color: #ffffff;
     width: 100%; /* Adjust this value as needed */
     padding: 10px;
+    background-color: #66bc54;
+    z-index: 99999999;
 }
 
 .comparison .desc-valta {
-      width: 549px;
-      left: 108px;
-      white-space: normal;
-}
-
-.comparison .group2 {
-    position: absolute;
-    width: 100%;
-    height: 45px;
-    left: 761px;
-    background-color: #ffffff;
+    width: 549px;
+    left: 108px;
+    white-space: normal;
     border: 1px solid #66bc54;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000000;
-    cursor: pointer;
-    top: 492px;
-    width: 551px;
-}
 
-.comparison .description2 {
-    position: absolute;
-    top: 55px; /* Adjust this value as needed */
-    background-color: #ffffff;
-    width: 100%; /* Adjust this value as needed */
-    padding: 10px;
-}
-
-.comparison .desc-analog {
-      width: 549px;
-      left: 761px;
-      white-space: normal;
 }

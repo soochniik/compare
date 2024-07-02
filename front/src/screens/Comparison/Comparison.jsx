@@ -23,7 +23,7 @@ export const Comparison = ({ token }) => {
 
         const fetchData = async () => {
             try {
-                const response = await fetch('http://172.20.10.10:8000/analysis/', {
+                const response = await fetch('http://10.10.208.11:8000/analysis/', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json'
@@ -66,6 +66,10 @@ export const Comparison = ({ token }) => {
     navigate("/graphs");
   };
 
+  const onTwoClick = () => {
+    navigate("/twoproducts");
+  };
+
   const handleDocumentClick = (e) => {
       if (groupRef.current && !groupRef.current.contains(e.target)) {
           setShowDescription(false); // Закрываем выпадающее описание при клике вне кнопки
@@ -105,7 +109,7 @@ export const Comparison = ({ token }) => {
       <div className="div-2">
         <div className="ellipse" />
         <div className="overlap-group">
-          <div className="text-wrapper-5">Аналоги</div>
+          <div className="text-wrapper-5">Предложения на других сайтах</div>
           {data && data !== "Error" && data.result.map((item, index) => (
             item.store.name !== "Valta" &&
               <div key={index} className={"element"}>
@@ -136,7 +140,7 @@ export const Comparison = ({ token }) => {
         </a>
         <ButtonsMenu onClick={onHistoryClick} button="normal" className="buttons-menu-normal-history" text="История сравнений" />
         <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
-        <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
+        <ButtonsMenu onClick={onTwoClick} button="normal" className="buttons-menu-normal-two" text="Сравнить 2 товара" />
         <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
         <div className="text-wrapper-7">Валта</div>
         {data && data !== "Error" && data.result.find(item => item.store.name === 'Valta') && (
@@ -154,7 +158,7 @@ export const Comparison = ({ token }) => {
             </div>
           }
         </div>
-        <div className="recommend">Рекомендуем</div>
+        <div className="recommend">Аналоги</div>
         {data && data !== "Error" && data.similar.map((item, index) => (
           <div key={index} className={"similar"}>
             <div className="similar-content">{item.name}, Артикул: {item.vendor_code}</div>

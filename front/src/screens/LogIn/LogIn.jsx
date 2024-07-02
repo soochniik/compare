@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Buttons } from "../../components/Buttons";
-import { ButtonsMenu } from "../../components/ButtonsMenu";
 import { Input } from "../../components/Input";
 import "./style.css";
 import logo from "../../assets/logo.png";
@@ -22,7 +21,7 @@ export const LogIn = ({ setToken }) => {
 
   const handleLoginClick = async () => {
     try {
-      const response = await fetch('http://172.20.10.10:8000/login/', {
+      const response = await fetch('http://10.10.208.11:8000/login/', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

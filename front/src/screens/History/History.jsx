@@ -12,7 +12,7 @@ export const History = ({ token }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://172.20.10.10:8000/history/', {
+                const response = await fetch('http://10.10.208.11:8000/history/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ export const History = ({ token }) => {
         navigate(-1);
     };
     const onCompareClick = () => {
-        navigate("/");
+        navigate("/twoproducts");
     };
     const onGraphClick = () => {
         navigate("/graphs");
@@ -50,17 +50,27 @@ export const History = ({ token }) => {
                 <header className="header">
                     <div className="text-wrapper-3">История сравнений</div>
                 </header>
-                <div className="ellipse" />
                 <div className="overlap-group">
-                    {data && data.map((item, index) => (
-                        <div key={index} className={"product"}>
-                            <div className="product-content">
-                                {item.date} {item.vendor_code.map((code, i) => (
-                                    <div className={"elem"} onClick={() => tokenClick(code, item.date)}>{code}</div>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Артикул</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {data && data.map((item, index) => (
+                                <tr key={index}>
+                                    <td>{item.date}</td>
+                                    <td>
+                                        {item.vendor_code.map((code, i) => (
+                                            <div key={i} className={"elem"} onClick={() => tokenClick(code, item.date)}>{code}</div>
+                                        ))}
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
                 </div>
                 <div className="main-logo">
                     <img
@@ -71,10 +81,9 @@ export const History = ({ token }) => {
                 <a className="text-wrapper-7" href="https://valta.ru/" rel="noopener noreferrer" target="_blank">
                     Основной сайт
                 </a>
-                <ButtonsMenu onClick={onCompareClick} button="normal" className="buttons-menu-normal-history" text="Сравнить товары" />
+                <ButtonsMenu onClick={onCompareClick} button="normal" className="buttons-menu-normal-history" text="Сравнение 2 товаров" />
                 <ButtonsMenu onClick={onGraphClick} button="normal" className="buttons-menu-normal-graph" text="Мониторинг цен" />
                 <Buttons onClick={onBackClick} button="normal" className="buttons-normal-back" text="Назад" />
-                <p className="p">Все права защищены АО «Валта Пет Продактс», 2014 - 2024</p>
             </div>
         </div>
     );
